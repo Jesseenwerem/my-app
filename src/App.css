@@ -414,7 +414,7 @@ video {
   border: 1px solid rgba(255, 68, 0, 0.402);
 }
 
-.Bmw-btn:hover{
+.Bmw-btn:hover {
   background-color: rgba(236, 75, 17, 0.668);
 }
 
@@ -606,7 +606,7 @@ video {
   left: 94%;
   background: white;
   border: 1px solid white;
-  
+
 }
 
 .info {
@@ -643,7 +643,7 @@ video {
   border-top-right-radius: 15px;
 }
 
-.car-details{
+.car-details {
   display: flex;
   position: absolute;
   height: 12rem;
@@ -654,16 +654,29 @@ video {
   left: 41%;
 }
 
-.images-container{
-  display: flex;
+.images-container {
+
   position: absolute;
   top: 49%;
   height: 17.4rem;
   width: 15rem;
   background-color: white;
-  border: 1px solid lightgray;}
+  border: 1px solid lightgray;
+  display: grid;
 
-.specifications{
+}
+
+.image-container-2 {
+  padding: 5px;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 5px;
+  transition: 1s ease;
+  row-gap: -40px;
+  column-gap: 4px;
+}
+
+.specifications {
   display: flex;
   position: absolute;
   top: 49%;
@@ -673,6 +686,14 @@ video {
   background-color: white;
   border: 1px solid lightgray;
 }
-.cars-container-md{
+
+.cars-container-md {
   display: none;
+}
+
+.img-1 {
+  height: 7rem;
+  width: 7rem;
+  object-fit: cover;
+  cursor: pointer;
 }
