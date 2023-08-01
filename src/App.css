@@ -1,38 +1,678 @@
-.App {
-  text-align: center;
+.loader {
+  position: absolute;
+  display: flex;
+  left: 20%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-container {
+  height: 99.5vh;
+  width: 50%;
+  background-color: white;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Logo {
+  height: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcome {
+  position: absolute;
+  top: 5%;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.456);
+}
+
+.login {
+  position: absolute;
+  top: 17%;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.login-2 {
+  position: absolute;
+  top: 27%;
+  font-weight: 100;
+  font-size: 17px;
+}
+
+.icon {
+  position: absolute;
+  top: 38%;
+  display: flex;
+  gap: 30px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.facebook {
+  color: blue;
+  font-size: 28px;
+}
+
+.tweeter {
+  color: darkblue;
+  font-size: 30px;
+}
+
+.google {
+  font-size: 30px;
+}
+
+.blur {
+  height: 99.5vh;
+  width: 50%;
+  background: rgba(255, 68, 0, 0.49);
+  position: absolute;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+}
+
+h3 {
+  color: white;
+  font-size: 50px;
+
+}
+
+.background {
+  height: 99.5vh;
+  width: 50%;
+  object-fit: cover;
+  left: 50%;
+  position: absolute;
+  top: 0%;
+}
+
+.line-1 {
+  position: absolute;
+  top: 50%;
+  border-bottom: 1px solid gray;
+  width: 10%;
+  left: 13%;
+}
+
+.line-2 {
+  position: absolute;
+  top: 50%;
+  border-bottom: 1px solid gray;
+  width: 10%;
+  left: 27%;
+}
+
+.or {
+  position: absolute;
+  top: 46%;
+}
+
+.input-field {
+  position: absolute;
+  top: 57%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 30px;
+  outline: hidden;
+  border: none;
+}
+
+.input-field input {
+  height: 30px;
+  width: 50vh;
+  padding: 8px;
+  border-radius: 24px;
+  background-color: transparent;
+  color: black;
+  font-size: 13px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.eye {
+  position: absolute;
+  top: 83%;
+  left: 88%;
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  outline: hidden;
+  border: hidden;
+}
+
+.signin {
+  position: absolute;
+  top: 110%;
+  left: 35%;
+  width: 35%;
+  height: 3rem;
+  border-radius: 24px;
+  outline: none;
+  border: 1px solid transparent;
+  background: orangered;
+  color: white;
+  font-size: 15px;
+}
+
+.signin:hover {
+  background-color: rgb(242, 97, 0);
+}
+
+
+.nav-bar {
+  height: 50px;
+  width: 100%;
+  background: black;
+  display: flex;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 40px;
+  background: white;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.Logo1 {
+  height: 30px;
+  position: absolute;
+  left: 5%;
+}
+
+.navigation {
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+
+video {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 5.8%;
+}
+
+
+.responsive-login {
+  display: none;
+}
+
+.responsive-login-lg {
+  display: none;
+}
+
+
+.slider {
+  margin-top: 4%;
+  height: auto;
+  display: flex;
+}
+
+
+
+.slider-1 {
+  height: 62px;
+  object-fit: contain;
+}
+
+.slider-2 {
+  height: 50px;
+  object-fit: contain;
+
+}
+
+.slider-3 {
+  height: 60px;
+  object-fit: contain;
+
+}
+
+.slider-4 {
+  height: 52px;
+  object-fit: contain;
+
+}
+
+.button-1 {
+  margin-left: 28%;
+  height: 80px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.button-1:hover {
+  background: rgba(220, 220, 220, 0.561);
+  transition: all 0.3s ease-out;
+}
+
+.Brands {
+  position: absolute;
+  top: 40rem;
+  left: 2%;
+  font-size: 19px;
+  text-transform: capitalize;
+  font-weight: 500;
+  z-index: 999;
+}
+
+.navigation-md {
+  display: none;
+}
+
+.navigation-lg {
+  display: none;
+}
+
+.responsive-swiper {
+  display: none;
+}
+
+.responsive-swiper-lg {
+  display: none;
+}
+
+
+
+
+
+
+/* //CAR PAGE STYLING// */
+
+.BMW-video {
+  height: 25rem;
+  object-fit: cover;
+  position: absolute;
+}
+
+.BMW-text {
+  display: flex;
+  position: absolute;
+  color: white;
+  font-size: 60px;
+  top: 30%;
+  left: 36%;
+}
+
+.bmx-input {
+  display: flex;
+  position: absolute;
+  top: -5%;
+  padding: 10px;
+  left: 3%;
+}
+
+
+.Bmx-container {
+  padding: 20px;
+  position: absolute;
+  top: 80%;
+  background: white;
+  height: auto;
+  width: 97%;
+}
+
+.bmx-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  transition: 1s ease;
+  row-gap: 20px;
+  column-gap: 20px;
+  width: 90%;
+  padding-left: 1%;
+  /* margin-left: 1%; */
+}
+
+.bmx-1 {
+  position: relative;
+
+}
+
+.image-container {
+  position: relative;
+}
+
+.Bmw-img {
+  object-fit: cover;
+  height: 44vh;
+  width: 25rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px black;
+  display: flex;
+  cursor: pointer;
+}
+
+
+
+.Bmw-discription-container {
+  position: relative;
+  top: -65%;
+  left: 28%;
+  z-index: 999;
+  display: flex;
+  font-size: 20px;
+  height: 30px;
+  width: 45%;
+  text-shadow: 5px 5px 10px black;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.357);
+  cursor: pointer;
+  opacity: 0;
+}
+
+
+.Bmw-dicription {
+  font-size: 22px;
+}
+
+.Bmw-btn-container {
+  position: relative;
+  opacity: 0;
+  display: flex;
+
+}
+
+.Bmw-btn {
+  position: absolute;
+  top: -110px;
+  left: 14rem;
+  height: 45px;
+  width: 33%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  z-index: 9999;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 68, 0, 0.402);
+  color: white;
+  border: 1px solid rgba(255, 68, 0, 0.402);
+}
+
+.Bmw-btn:hover{
+  background-color: rgba(236, 75, 17, 0.668);
+}
+
+.bmx-1:hover:hover .Bmw-discription-container,
+.bmx-1:hover:hover .Bmw-btn-container {
+  transform: translateY(-10px);
+  opacity: 1;
+  transition: 1s ease;
+}
+
+
+.bmx-1:hover img {
+  transform: translateY(-10px);
+  transition: 1s ease;
+  opacity: 0.8;
+}
+
+.responsive-Bmw-container-md {
+  display: none;
+}
+
+.responsive-Bmw-container-lg {
+  display: none;
+}
+
+.cars-container {
+  display: flex;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 120vh;
+}
+
+.car-wrapper {
+  margin-top: 5%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  transition: 1s ease;
+  row-gap: 20px;
+  column-gap: 20px;
+  width: 90%;
+  /* padding-left: 1%; */
+  margin-left: 3.5%;
+}
+
+.popular-cars {
+  font-size: 18px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.box {
+  height: 28rem;
+  width: 25rem;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+
+}
+
+.img {
+  object-fit: cover;
+  height: 15rem;
+  width: 25rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.details {
+  position: relative;
+  left: 27.2%;
+  background-color: rgba(255, 68, 0, 0.402);
+  color: white;
+  border: 1px solid orangered;
+  top: -30px;
+  left: 70.9%;
+  cursor: pointer;
+}
+
+.brand-container {
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  justify-content: center;
+  gap: 6px;
+  top: 58%;
+
+}
+
+.button-container button {
+  height: 2rem;
+  width: 7.5rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: orangered;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.price-tag-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.price-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 6rem;
+  left: -39%;
+  padding: 2px;
+
+}
+
+.price {
+  position: absolute;
+  font-size: 25px;
+}
+
+.price-tag {
+  display: flex;
+  height: 3rem;
+  width: 8rem;
+  position: absolute;
+  left: 45%;
+  background: orangered;
+  color: white;
+  border: 1px solid rgba(252, 80, 17, 0.933);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.price-tag:hover {
+  background: rgba(252, 80, 17, 0.933);
+}
+
+.pay {
+  display: flex;
+  font-size: 18px;
+}
+
+.mescedis-popup {
+  display: flex;
+  height: 35rem;
+  width: 40rem;
+  background-color: white;
+  position: absolute;
+  top: 61rem;
+  left: 25%;
+  box-shadow: 0px 0px 10px 10px solid black;
+
+}
+
+.mesedis-wrapper {
+  display: flex;
+  padding: 10px;
+}
+
+.cancle-button {
+  height: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  left: 94%;
+  background: white;
+  border: 1px solid white;
+  
+}
+
+.info {
+  height: 2rem;
+  width: 38.6rem;
+  background-color: rgba(0, 0, 0, 0.415);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+
+
+.box-1 {
+  height: 12rem;
+  width: 15rem;
+  background: white;
+  display: flex;
+  position: absolute;
+  top: 13%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+
+.image-2 {
+  height: 12rem;
+  width: 15rem;
+  object-fit: cover;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.car-details{
+  display: flex;
+  position: absolute;
+  height: 12rem;
+  width: 23rem;
+  background: white;
+  border: 1px solid lightgray;
+  top: 12.8%;
+  left: 41%;
+}
+
+.images-container{
+  display: flex;
+  position: absolute;
+  top: 49%;
+  height: 17.4rem;
+  width: 15rem;
+  background-color: white;
+  border: 1px solid lightgray;}
+
+.specifications{
+  display: flex;
+  position: absolute;
+  top: 49%;
+  left: 41%;
+  height: 17.4rem;
+  width: 23rem;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+.cars-container-md{
+  display: none;
 }
