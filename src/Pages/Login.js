@@ -3,7 +3,7 @@ import { BsFacebook } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import { FaTwitter } from "react-icons/fa";
 import { AiOutlineEye } from "react-icons/ai";
-import { AiOutlineEyeInvisible } from "react-icons/ai";
+import { AiOutlineEyeInvisible, AiOutlineUserAdd } from "react-icons/ai";
 import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,23 +17,6 @@ function Login() {
     useEffect(() => {
         AOS.init({ duration: 3000 });
     }, []);
-
-
-    //   const navigate = useNavigate();
-
-
-    //   async function GoogleSignup(e) {
-    //     e.preventDefault();
-    //     try {
-    //       await signInWithPopup(auth, provider).then(() => {
-    //         navigate("/home");
-    //       })
-    //     } catch (error) {
-    //       console.log(error);
-
-    //     }
-    //   }
-
 
     const [state, setstate] = useState(false);
 
@@ -63,7 +46,6 @@ function Login() {
                 <p className='or'>or</p>
 
                 <div className='input-field'>
-                    <input type='text' placeholder='Enter Full Name' id='Name' />
                     <input type='text' placeholder='Email' id='email' />
                     <input type={state ? "text" :
                         "password"
@@ -73,9 +55,11 @@ function Login() {
                             <AiOutlineEye />
                         }
                     </button>
-                    <button className='signin'>Signin</button>
-
+                    <button className='signin'>Sign In
+                        <AiOutlineUserAdd className='Sign-in-icon' />
+                    </button>
                 </div>
+                <p className='register-link'> Don't have an Account ?<a href="/Register" >Register Now</a></p>
             </div>
             <img className='background' src={require("../Images/image(12).jpg")} alt="" />
             {/* <img className='' src={require("")} alt="" /> */}
@@ -86,7 +70,7 @@ function Login() {
                 <img className='responsive-Logo' src={require("../Images/logo1.png")} alt='' />
                 <h2 className='responsive-welcome'>WELCOME TO BMW</h2>
                 <div className='resp-input-field'>
-                    <input className='responsive-input' type='text' placeholder='Enter Full Name' id='Name' />
+                    {/* <input className='responsive-input' type='text' placeholder='Enter Full Name' id='Name' /> */}
                     <input className='responsive-input' type='text' placeholder='Email' id='email' />
                     <input className='responsive-input' type={state ? "text" :
                         "password"
@@ -96,7 +80,10 @@ function Login() {
                             <AiOutlineEye />
                         }
                     </button>
-                    <button className='responsive-signin'>Signin</button>
+                    <button className='responsive-signin'>Signin
+                        <AiOutlineUserAdd className='Sign-in-icon' />
+
+                    </button>
                     <p className='responsive-or'>or</p>
                     <h3 className='sign-with'>Sign with</h3>
                     <div className='responsive-icon'>
@@ -115,7 +102,7 @@ function Login() {
                 <img className='responsive-Logo-lg' src={require("../Images/logo1.png")} alt='' />
                 <h2 className='responsive-welcome-lg'>WELCOME TO BMW</h2>
                 <div className='resp-input-field'>
-                    <input className='responsive-input-lg' type='text' placeholder='Enter Full Name' id='Name' />
+                    {/* <input className='responsive-input-lg' type='text' placeholder='Enter Full Name' id='Name' /> */}
                     <input className='responsive-input-lg' type='text' placeholder='Email' id='email' />
                     <input className='responsive-input-lg' type={state ? "text" :
                         "password"
@@ -140,7 +127,7 @@ function Login() {
 
 
             </div>
-            
+
 
         </div>
     )

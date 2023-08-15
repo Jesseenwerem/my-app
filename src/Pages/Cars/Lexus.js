@@ -1,37 +1,34 @@
 import React from 'react'
 import Header from '../../Components/Header'
-import video from '../../assets/video2.mp4'
+import video from '../../assets/Video4.mp4'
 import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-
-function Bmw() {
+function Lexus() {
 
     useEffect(() => {
         AOS.init({ duration: 900 });
     }, []);
-
 
     return (
         <div>
             < Header />
             <div className='bmw-vid-container'>
                 <video className='BMW-video' src={video} autoPlay loop muted />
-                <h2 className='BMW-text'  data-aos="flip-left"  >BMW Brands</h2>
+                <h2 className='BMW-text' data-aos="flip-left"  >BMW Brands</h2>
             </div>
 
             <div className='bmw-vid-container-lg'>
                 <video className='BMW-video' src={video} autoPlay loop muted />
-                <h2 className='BMW-text' data-aos="fade-in"  >BMW Brands</h2>
-            </div> 
+                {/* <h2 className='BMW-text' data-aos="fade-in"  >BMW Brands</h2> */}
+            </div>
 
             <div className='Bmx-container'>
-            {/* <input className='bmx-input'></input> */}
+                {/* <input className='bmx-input'></input> */}
 
                 <div className='bmx-wrapper'>
 
-                    <div className='bmx-1'  data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car1.jpg")} alt="" />
                         </div>
@@ -44,7 +41,7 @@ function Bmw() {
                     </div>
 
 
-                    <div className='bmx-1'   data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car2.jpg")} alt="" />
                         </div>
@@ -56,7 +53,7 @@ function Bmw() {
                         </div>
                     </div>
 
-                    <div className='bmx-1'   data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car3.jpg")} alt="" />
                         </div>
@@ -69,7 +66,7 @@ function Bmw() {
                     </div>
 
 
-                    <div className='bmx-1'  data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car5.jpg")} alt="" />
                         </div>
@@ -82,7 +79,7 @@ function Bmw() {
                     </div>
 
 
-                    <div className='bmx-1'  data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car6.jpg")} alt="" />
                         </div>
@@ -96,7 +93,7 @@ function Bmw() {
 
 
 
-                    <div className='bmx-1'  data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car7.jpg")} alt="" />
                         </div>
@@ -108,7 +105,7 @@ function Bmw() {
                         </div>
                     </div>
 
-                    <div className='bmx-1'  data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car8.jpg")} alt="" />
                         </div>
@@ -121,7 +118,7 @@ function Bmw() {
                     </div>
 
 
-                    <div className='bmx-1'  data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car9.jpg")} alt="" />
                         </div>
@@ -134,7 +131,7 @@ function Bmw() {
                     </div>
 
 
-                    <div className='bmx-1'  data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car10.jpg")} alt="" />
                         </div>
@@ -146,7 +143,7 @@ function Bmw() {
                         </div>
                     </div>
 
-                    <div className='bmx-1'  data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car11.jpg")} alt="" />
                         </div>
@@ -159,7 +156,7 @@ function Bmw() {
                     </div>
 
 
-                    <div className='bmx-1'  data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car1.jpg")} alt="" />
                         </div>
@@ -172,7 +169,7 @@ function Bmw() {
                     </div>
 
 
-                    <div className='bmx-1'  data-aos="flip-left">
+                    <div className='bmx-1' data-aos="flip-left">
                         <div className='image-container'>
                             <img className='Bmw-img' src={require("../../Images/Cars/car4.jpg")} alt="" />
                         </div>
@@ -409,14 +406,8 @@ function Bmw() {
 
                 </div>
             </div>
-
-
-
-
         </div>
-
-
     )
 }
 
-export default Bmw
+export default Lexus

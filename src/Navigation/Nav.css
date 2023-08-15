@@ -1,0 +1,46 @@
+.Navigation-2{
+    display: flex;
+    border-bottom: 1px solid #f3f3f3;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+    margin-left: 2rem;
+}
+
+input{
+    padding: 12px 20px;
+    border: 1px solid gray;
+    background-color: #f7f6f6;
+    outline: none;
+    margin-right: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 14rem;
+}
+
+.navigation-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+    color: orangered;
+}
+
+@media(max-width:450px) {
+    .Navigation-2{
+        display: flex;
+        width: 70%;
+        padding: 30px;
+    }
+
+    .Profile-container{
+        display: none;
+    }
+
+    .Nav-container{
+        width: 6rem;
+        margin-left: -10rem;
+        
+    }
+}
+

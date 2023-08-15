@@ -10,6 +10,10 @@ import Login from './Pages/Login.js';
 import Home from './Pages/Home.js'
 import Bmw from './Pages/Cars/Bmw';
 import Buy from './Pages/Buy';
+import Audi from './Pages/Cars/Audi'
+import Lexus from './Pages/Cars/Lexus'
+import Mercedes from './Pages/Cars/Mercedes'
+import Register from './Pages/Register'
 
 
 function App() {
@@ -21,7 +25,11 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/Bmw" element={<Bmw />} />
+          <Route path="/Audi" element={<Audi />} />
+          <Route path="/Lexus" element={<Lexus />} />
+          <Route path="/Mercedes" element={<Mercedes />} />
           <Route path="/Buy" element={<Buy />} />
+          <Route path="/Register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </div>

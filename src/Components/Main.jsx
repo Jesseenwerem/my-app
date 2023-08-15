@@ -5,8 +5,8 @@ import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { PiEngine } from "react-icons/pi";
-import {BsFuelPump} from "react-icons/bs"
-import {MdAirlineSeatReclineExtra , MdSpeed} from "react-icons/md"
+import { BsFuelPump } from "react-icons/bs"
+import { MdAirlineSeatReclineExtra, MdSpeed } from "react-icons/md"
 
 
 
@@ -234,7 +234,7 @@ function Main() {
           <div className="box-md">
             <div className="car-1-md">
               <div className="car-image-container-md">
-                <img className='img-md' src={require("../Images/mesedis-benz.jpg")} alt="" />
+                <img className='img-md' src={require("../Images/ford-ranger.jpg")} alt="" />
               </div>
               <button className='detail-md' onClick={openModal}>View Details</button>
               <div className='brand-container-md'>
@@ -261,7 +261,7 @@ function Main() {
           <div className="box-md">
             <div className="car-1-md">
               <div className="car-image-container-md">
-                <img className='img-md' src={require("../Images/mesedis-benz.jpg")} alt="" />
+                <img className='img-md' src={require("../Images/lexus.jpg")} alt="" />
               </div>
               <button className='detail-md' onClick={openModal}>View Details</button>
               <div className='brand-container-md'>
@@ -288,7 +288,7 @@ function Main() {
           <div className="box-md">
             <div className="car-1-md">
               <div className="car-image-container-md">
-                <img className='img-md' src={require("../Images/mesedis-benz.jpg")} alt="" />
+                <img className='img-md' src={require("../Images/toyota-corolla.jpg")} alt="" />
               </div>
               <button className='detail-md' onClick={openModal}>View Details</button>
               <div className='brand-container-md'>
@@ -314,10 +314,173 @@ function Main() {
       </div>
 
 
+      <h1 className='popular-cars-lg'>Popular cars</h1>
+      <div className='cars-container-lg'>
+
+        <div className="car-wrapper-lg">
+
+          <div className="box-lg">
+            <div className="car-1-lg">
+              <div className="car-image-container-lg">
+                <img className='img-lg' src={require("../Images/mesedis-benz.jpg")} alt="" />
+              </div>
+              <button className='detail-lg' onClick={openModal}>View Details</button>
+              <div className='brand-container-lg'>
+                <p className='brand-name-lg'>2023 Mercedis-benz GLE 350</p>
+                <div className='button-container-lg'>
+                  <button>Foreign</button>
+                  <button>20,528 Mlies</button>
+                  <button>4 cylinders</button>
+                </div>
+              </div>
+              <div className='price-tag-container-lg'>
+                <button className='price-tag-lg'>
+                  <p className='pay-lg'>Pay</p>
+                </button>
+                <div className='price-container-lg'>
+                  <p className='price-lg'>$750,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="box-lg">
+            <div className="car-1-lg">
+              <div className="car-image-container-lg">
+                <img className='img-lg' src={require("../Images/ford-ranger.jpg")} alt="" />
+              </div>
+              <button className='detail-lg' onClick={openModal}>View Details</button>
+              <div className='brand-container-lg'>
+                <p className='brand-name-lg'>2023 Mercedis-benz GLE 350</p>
+                <div className='button-container-lg'>
+                  <button>Foreign</button>
+                  <button>20,528 Mlies</button>
+                  <button>4 cylinders</button>
+                </div>
+              </div>
+              <div className='price-tag-container-lg'>
+                <button className='price-tag-lg'>
+                  <p className='pay-lg'>Pay</p>
+                </button>
+                <div className='price-container-lg'>
+                  <p className='price-lg'>$750,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="box-lg">
+            <div className="car-1-lg">
+              <div className="car-image-container-lg">
+                <img className='img-lg' src={require("../Images/lexus.jpg")} alt="" />
+              </div>
+              <button className='detail-lg' onClick={openModal}>View Details</button>
+              <div className='brand-container-lg'>
+                <p className='brand-name-lg'>2023 Mercedis-benz GLE 350</p>
+                <div className='button-container-lg'>
+                  <button>Foreign</button>
+                  <button>20,528 Mlies</button>
+                  <button>4 cylinders</button>
+                </div>
+              </div>
+              <div className='price-tag-container-lg'>
+                <button className='price-tag-lg'>
+                  <p className='pay-lg'>Pay</p>
+                </button>
+                <div className='price-container-lg'>
+                  <p className='price-lg'>$750,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="box-lg">
+            <div className="car-1-lg">
+              <div className="car-image-container-lg">
+                <img className='img-lg' src={require("../Images/toyota-corolla.jpg")} alt="" />
+              </div>
+              <button className='detail-lg' onClick={openModal}>View Details</button>
+              <div className='brand-container-lg'>
+                <p className='brand-name-lg'>2023 Mercedis-benz GLE 350</p>
+                <div className='button-container-lg'>
+                  <button>Foreign</button>
+                  <button>20,528 Mlies</button>
+                  <button>4 cylinders</button>
+                </div>
+              </div>
+              <div className='price-tag-container-lg'>
+                <button className='price-tag-lg'>
+                  <p className='pay-lg'>Pay</p>
+                </button>
+                <div className='price-container-lg'>
+                  <p className='price-lg'>$750,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="box-lg">
+            <div className="car-1-lg">
+              <div className="car-image-container-lg">
+                <img className='img-lg' src={require("../Images/audi.jpg")} alt="" />
+              </div>
+              <button className='detail-lg' onClick={openModal}>View Details</button>
+              <div className='brand-container-lg'>
+                <p className='brand-name-lg'>2023 Mercedis-benz GLE 350</p>
+                <div className='button-container-lg'>
+                  <button>Foreign</button>
+                  <button>20,528 Mlies</button>
+                  <button>4 cylinders</button>
+                </div>
+              </div>
+              <div className='price-tag-container-lg'>
+                <button className='price-tag-lg'>
+                  <p className='pay-lg'>Pay</p>
+                </button>
+                <div className='price-container-lg'>
+                  <p className='price-lg'>$750,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="box-lg">
+            <div className="car-1-lg">
+              <div className="car-image-container-lg">
+                <img className='img-lg' src={require("../Images/car11.jpg")} alt="" />
+              </div>
+              <button className='detail-lg' onClick={openModal}>View Details</button>
+              <div className='brand-container-lg'>
+                <p className='brand-name-lg'>2023 Mercedis-benz GLE 350</p>
+                <div className='button-container-lg'>
+                  <button>Foreign</button>
+                  <button>20,528 Mlies</button>
+                  <button>4 cylinders</button>
+                </div>
+              </div>
+              <div className='price-tag-container-lg'>
+                <button className='price-tag-lg'>
+                  <p className='pay-lg'>Pay</p>
+                </button>
+                <div className='price-container-lg'>
+                  <p className='price-lg'>$750,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
       {showModal && (
         <div className='mescedis-popup' data-aos="zoom-in-up">
           <div className="mesedis-wrapper">
             <div className="info">
+              <p className='car-name-1'>2023 Mercedis-benz GLE 350</p>
               <button className='cancle-button' onClick={closeModal}><FaTimes className='cancle-btn' /></button>
             </div>
             <div className="box-1">
@@ -326,13 +489,11 @@ function Main() {
               </div>
             </div>
             <div className="car-details">
-              {/* <p><li>5 (7 optional) Passenger capacity.</li></p>
-              <p><li></li></p>
-              <p><li></li></p>
-              <p><li></li></p>
-              <p><li></li></p>
-              <p><li></li></p>
-              <p><li></li></p> */}
+              <li> 5 (7 optional) Passenger capacity.</li>
+              <li> 5 (7 optional) Passenger capacity.</li>
+              <li> 5 (7 optional) Passenger capacity.</li>
+              <li> 5 (7 optional) Passenger capacity.</li>
+
             </div>
             <div className="images-container">
               <div className="image-container-2">
@@ -344,10 +505,18 @@ function Main() {
             </div>
             <div className="specifications">
               <div className="specification-icons">
-                <PiEngine />
-                <BsFuelPump />
-                <MdAirlineSeatReclineExtra />
-                <MdSpeed />
+                <div className="icon-container"> <PiEngine className='icon-one' />
+                  <p className='icon-text'>2.0 L</p>
+                </div>
+                <div className="icon-container"><BsFuelPump className='icon-one' />
+                  <p className='icon-text'>22.5 gal</p>
+                </div>
+                <div className="icon-container"><MdAirlineSeatReclineExtra className='icon-one' />
+                  <p className='icon-text'>5 (7 optional) Passenger capacity</p>
+                </div>
+                <div className="icon-container"><MdSpeed className='icon-one' />
+                  <p className='icon-text'>9-speed shiftable automatic</p>
+                </div>
               </div>
             </div>
 
