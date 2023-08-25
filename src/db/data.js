@@ -4,8 +4,6 @@ import { AiFillStar } from 'react-icons/ai'
 
 const data = [
 
-
-
     {
         Img: "https://carandx.com/wp-content/uploads/2022/08/Mercedes-Benz-GLE-450-Coupe-2022-AG_White-23.jpg",
         title: "Mercedes-Benz-GLE-450-Coupe-2022-AG",

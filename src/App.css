@@ -76,7 +76,6 @@
 h3 {
   color: white;
   font-size: 50px;
-
 }
 
 .background {
@@ -182,8 +181,6 @@ h3 {
   background-color: rgb(242, 97, 0);
 }
 
-
-
 /* Register Styling */
 
 .register-container {
@@ -192,9 +189,7 @@ h3 {
   width: 50%;
   background-color: whitesmoke;
   justify-content: center;
-
 }
-
 
 .register-background {
   height: 102.1vh;
@@ -205,7 +200,6 @@ h3 {
   left: 50%;
   margin-top: -52%;
 }
-
 
 .register-input-field {
   position: absolute;
@@ -230,7 +224,7 @@ h3 {
 
 .register-input-field input:hover {
   box-shadow: 0px 2px 4px gray;
-} 
+}
 
 .register-signin {
   position: absolute;
@@ -247,7 +241,6 @@ h3 {
   cursor: pointer;
 }
 
-
 .register-eye {
   position: absolute;
   top: 60%;
@@ -259,7 +252,7 @@ h3 {
   border: hidden;
 }
 
-.Login-link{
+.Login-link {
   position: absolute;
   top: 40rem;
   left: 13%;
@@ -268,11 +261,18 @@ h3 {
   font-weight: 700;
 }
 
-.Login-link a{
+.Login-link a {
   color: orangered;
   text-decoration: none;
-} 
+}
 
+.responsive-register-container {
+  display: none;
+}
+
+.register-btn-md {
+  display: none;
+}
 
 /* Register Styling Ends */
 
@@ -331,7 +331,6 @@ nav {
   position: relative;
 }
 
-
 .log-out-btn-container {
   position: relative;
   top: 18rem;
@@ -339,7 +338,6 @@ nav {
   z-index: 1000;
   left: 1.5rem;
   text-decoration: none;
-
 }
 
 .logout-btn {
@@ -383,7 +381,6 @@ video {
   margin-top: 5.8%;
 }
 
-
 .responsive-login {
   display: none;
 }
@@ -392,14 +389,11 @@ video {
   display: none;
 }
 
-
 .slider {
   margin-top: 4%;
   height: auto;
   display: flex;
 }
-
-
 
 .slider-1 {
   height: 62px;
@@ -409,19 +403,16 @@ video {
 .slider-2 {
   height: 50px;
   object-fit: contain;
-
 }
 
 .slider-3 {
   height: 60px;
   object-fit: contain;
-
 }
 
 .slider-4 {
   height: 52px;
   object-fit: contain;
-
 }
 
 .button-1 {
@@ -468,11 +459,6 @@ video {
   display: none;
 }
 
-
-
-
-
-
 /* //CAR PAGE STYLING// */
 
 .BMW-video {
@@ -498,7 +484,6 @@ video {
   left: 3%;
 }
 
-
 .Bmx-container {
   padding: 20px;
   position: absolute;
@@ -521,7 +506,6 @@ video {
 
 .bmx-1 {
   position: relative;
-
 }
 
 .image-container {
@@ -537,8 +521,6 @@ video {
   display: flex;
   cursor: pointer;
 }
-
-
 
 .Bmw-discription-container {
   position: relative;
@@ -561,7 +543,6 @@ video {
   opacity: 0;
 }
 
-
 .Bmw-dicription {
   font-size: 22px;
 }
@@ -570,7 +551,6 @@ video {
   position: relative;
   opacity: 0;
   display: flex;
-
 }
 
 .Bmw-btn {
@@ -604,7 +584,6 @@ video {
   opacity: 1;
   transition: 1s ease;
 }
-
 
 .bmx-1:hover img {
   transform: translateY(-10px);
@@ -657,7 +636,6 @@ video {
   align-items: center;
   border-radius: 10px;
   box-shadow: 0px 0px 10px black;
-
 }
 
 .img {
@@ -696,7 +674,6 @@ video {
   justify-content: center;
   gap: 6px;
   top: 58%;
-
 }
 
 .button-container button {
@@ -725,7 +702,6 @@ video {
   width: 6rem;
   left: -39%;
   padding: 2px;
-
 }
 
 .price {
@@ -764,11 +740,22 @@ video {
   height: 35rem;
   width: 40rem;
   background-color: white;
-  position: absolute;
-  top: 61rem;
-  left: 25%;
+  position: fixed;
+  top: 7.5rem;
+  bottom: 0;
+  left: 23rem;
   box-shadow: 0px 0px 10px 10px solid black;
+}
 
+.car-cover {
+  height: 500vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.596);
+  z-index: 999;
+  margin-top: -40rem;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  position: fixed;
 }
 
 .mesedis-wrapper {
@@ -781,24 +768,26 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   left: 94%;
-  background: white;
-  border: 1px solid white;
-
+  top: 7.5rem;
+  background: transparent;
+  border: hidden;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
 }
 
 .info {
   height: 2rem;
   width: 38.6rem;
-  background-color: rgba(0, 0, 0, 0.415);
+  background-color: orangered;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4px;
 }
-
 
 .box-1 {
   height: 12rem;
@@ -809,7 +798,6 @@ video {
   top: 13%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-
 }
 
 .image-2 {
@@ -844,9 +832,7 @@ video {
   text-shadow: 2px 4px 3px black;
 }
 
-
 .images-container {
-
   position: absolute;
   top: 49%;
   height: 17.4rem;
@@ -854,7 +840,6 @@ video {
   background-color: white;
   border: 1px solid lightgray;
   display: grid;
-
 }
 
 .image-container-2 {
@@ -913,10 +898,11 @@ video {
 
 .icon-container {
   display: flex;
+  background-color: orangered;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  color: rgb(8, 8, 8);
+  color: orangered;
   font-weight: 200;
   height: 6rem;
   width: 10rem;

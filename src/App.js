@@ -14,11 +14,13 @@ import Audi from './Pages/Cars/Audi'
 import Lexus from './Pages/Cars/Lexus'
 import Mercedes from './Pages/Cars/Mercedes'
 import Register from './Pages/Register'
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
   return (
     <div className="App">
+<Toaster />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Loader />} />
