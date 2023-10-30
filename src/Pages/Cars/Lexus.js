@@ -15,7 +15,7 @@ function Lexus() {
             < Header />
             <div className='bmw-vid-container'>
                 <video className='BMW-video' src={video} autoPlay loop muted />
-                <h2 className='BMW-text' data-aos="flip-left"  >BMW Brands</h2>
+                <h2 className='BMW-text' data-aos="flip-left"  >Lexus Brands</h2>
             </div>
 
             <div className='bmw-vid-container-lg'>

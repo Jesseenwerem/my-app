@@ -86,6 +86,7 @@ function Buy() {
       <Navigation query={query} handleInputChange={handleInputChange} />
       <Recommended handleClick={handleClick} />
       <Products result={result} />
+      <input></input>
     </>
   );
 }

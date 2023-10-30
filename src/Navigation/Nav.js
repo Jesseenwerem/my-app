@@ -1,6 +1,8 @@
 import React from 'react'
 import {AiOutlineShoppingCart, AiOutlineUserAdd} from 'react-icons/ai'
 import './Nav.css'
+import products from "../db/data"
+// import Card from '../Elements/Card';
 
 function Nav() {
   return (
@@ -10,7 +12,6 @@ function Nav() {
           className='search-input'
           id='search-input'
           placeholder='Search...' />
-          
       </div>
 
 <div className='Profile-container'>

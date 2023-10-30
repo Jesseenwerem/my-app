@@ -14,7 +14,15 @@ import Audi from './Pages/Cars/Audi'
 import Lexus from './Pages/Cars/Lexus'
 import Mercedes from './Pages/Cars/Mercedes'
 import Register from './Pages/Register'
+import All from './Pages/All'
+import Sell from './Pages/Sell'
+import Slider1 from '../src/Car-slider/Slider1'
 import { Toaster } from 'react-hot-toast';
+import { Pagination } from './Components/Pagination';
+import Ford from './Pages/Cars/Ford'
+import Checkout from "./Pages/Checkout"
+import New from "./Pages/New"
+
 
 
 function App() {
@@ -31,7 +39,15 @@ function App() {
           <Route path="/Lexus" element={<Lexus />} />
           <Route path="/Mercedes" element={<Mercedes />} />
           <Route path="/Buy" element={<Buy />} />
+          <Route path="/Ford" element={<Ford />} />
+          <Route path="/All" element={<All />} />
+          <Route path="/Sell" element={<Sell />} />
           <Route path="/Register" element={<Register />} />
+          <Route path="/Slider1" element={<Slider1 />} />
+          <Route path="/New" element={<New />} />
+          <Route path="/Pagination" element={<Pagination />} />
+          <Route path="/Checkout" element={<Checkout />} />
+          
         </Routes>
       </BrowserRouter>
     </div>

@@ -15,7 +15,7 @@ function Loader() {
 
     return (
     <div>
-         <img className='loader' src={require("../Images/car loader.gif")} alt="" /> 
+         <img className='loader' src={require("../Images/BUllet.gif")} alt="" /> 
          {/* <img className='' src={require("")} alt="" />  */}
 
     </div>

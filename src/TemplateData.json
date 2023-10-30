@@ -1,0 +1,74 @@
+ [
+  {
+    "id": 1,
+    "image": "https://carandx.com/wp-content/uploads/2022/08/Mercedes-Benz-GLE-450-Coupe-2022-AG_White-23.jpg",
+    "title": "Mercedes-Benz-GLE-450-Coupe-2022-AG",
+    "price": "₦500000"
+   
+  },
+  {
+    "id": 2,
+    "image": "https://www.carpro.com/hs-fs/hubfs/2023-toyota-corolla-xse-grille-carpro.jpg?width=1000&height=750&name=2023-toyota-corolla-xse-grille-carpro.jpg",
+    "title": "Toyota-Corolla-xse-grille",
+    "price": "₦500000"
+  },
+  {
+    "id": 3,
+    "image": "https://2021bestsuv.com/wp-content/uploads/2021/11/2023-Mercedes-Benz-GLS-facelift.jpg",
+    "title": "Mercedes-Benz GLS ",
+    "price": "₦500000"
+  },
+
+  {
+    "id": 4,
+    "image": "https://www.motortrend.com/uploads/sites/5/2020/06/2020-Lexus-RX-450h-24.jpg",
+    "title": "Bmw",
+    "price": "₦500000"
+  },
+
+  {
+    "id": 5,
+    "image": "https://www.motortrend.com/uploads/sites/5/2020/06/2020-Lexus-RX-450h-24.jpg",
+    "title": "Prius",
+    "price": 500000
+  },
+
+  {
+    "id": 6,
+    "image": "https://www.motortrend.com/uploads/sites/5/2020/06/2020-Lexus-RX-450h-24.jpg",
+    "title": "Lexus-RX-450h",
+    "price": 500000
+  },
+
+  {
+    "id": 7,
+    "image": "https://www.motortrend.com/uploads/sites/5/2020/06/2020-Lexus-RX-450h-24.jpg",
+    "title": "Camry Solara Convertible",
+    "price": 500000
+  },
+
+  {
+    "id": 8,
+    "image": "https://www.motortrend.com/uploads/sites/5/2020/06/2020-Lexus-RX-450h-24.jpg",
+    "title": "Ford-150",
+    "price": 500000
+  },
+
+  {
+    "id": 9,
+    "image": "https://www.motortrend.com/uploads/sites/5/2020/06/2020-Lexus-RX-450h-24.jpg",
+    "title": "Lexus-RX-450h",
+    "price": 500000
+  }
+,
+  {
+    "id": 10,
+    "image": "https://www.motortrend.com/uploads/sites/5/2020/06/2020-Lexus-RX-450h-24.jpg",
+    "title": "Lexus-RX-450h",
+    "price": 500000
+  }
+
+
+]
+
+

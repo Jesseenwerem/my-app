@@ -8,23 +8,23 @@ import {
 import { app, auth } from "../firebase";
 import { createUserWithEmailAndPassword } from "@firebase/auth";
 import { useNavigate } from "react-router-dom";
-import toast from 'react-hot-toast';
+import toast from "react-hot-toast";
 
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate("");
+  const navigate = useNavigate("/home");
 
   const signUp = (e) => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        navigate("/Login");
+        navigate("/home");
         console.log(userCredential);
       })
       .catch((error) => {
         console.log(error);
-        toast.error(error?.message)
+        toast.error(error?.message);
       });
   };
 
@@ -36,8 +36,6 @@ function Register() {
 
   return (
     <>
-
-
       <div className="register-container">
         <img className="Logo" src={require("../Images/logo1.png")} alt="" />
         <h2 className="welcome">WELCOME TO BMW</h2>
@@ -68,9 +66,9 @@ function Register() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="register-eye" onClick={toggleBtn}>
+          {/* <button className="register-eye" onClick={toggleBtn}>
             {state ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
-          </button>
+          </button> */}
 
           <button
             className="register-signin"
@@ -100,42 +98,49 @@ function Register() {
         </h3>
       </div>
 
-
       <section className="responsive-register-container">
-        <img
-          className="responsive-Logo"
-          src={require("../Images/logo1.png")}
-          alt=""
-        />
-        <h2 className="responsive-welcome">WELCOME TO BMW</h2>
-        <p className="create-text">Create an Account</p>
-        <form className="register-input-feild"onSubmit={signUp} >
-          <input type="text" placeholder="First Name" id="Fname" />
-          <input type="text" placeholder="Last Name" id="Lname" />
-          <input type="email" placeholder="Email" id="email"
-             value={email}
-             onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type={state ? "text" : "password"}
-            placeholder="Enter Passowrd"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <input
-            placeholder="Confirm Password"
-            type={state ? "text" : "password"}
-          />
-          <button className="register-eye" onClick={toggleBtn}>
+        <h2 className="responsive-welcome-1">Sign In</h2>
+        <div className="responsive-welcome-container-1">
+          <p>Signin & Discover New Cars</p>
+        </div>
+        <div className="register_input_feild_container">
+          <form className="register-input-feild" onSubmit={signUp}>
+            <input type="text" placeholder="First Name*" id="Fname" />
+            <input type="text" placeholder="Last Name*" id="Lname" />
+            <input
+              type="email"
+              placeholder="Email*"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type={state ? "text" : "password"}
+              placeholder="Enter Passowrd*"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <input
+              placeholder="Confirm Password*"
+              type={state ? "text" : "password"}
+            />
+            {/* <button className="register-eye-change" onClick={toggleBtn}>
             {state ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
-          </button>
-          <button className="register-btn-md"
-            type="submit"
-            name="submit"
-            value="sign in"
-          >Register</button>
-        </form>
+          </button> */}
+            <button
+              className="register-btn-md"
+              type="submit"
+              name="submit"
+              value="sign in"
+            >
+              Register
+            </button>
+
+              <a href="/Login" className="register_link">Login In</a>
+          </form>
+        </div>
       </section>
+
     </>
   );
 }

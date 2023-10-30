@@ -9,24 +9,24 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { app, auth } from "../firebase";
 import { signInWithEmailAndPassword } from "@firebase/auth";
-import {  useNavigate } from 'react-router-dom';
-import toast from 'react-hot-toast';
+import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
+// import { Carousel } from 'react-responsive-carousel';
 
 function Login() {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate('');
+  const navigate = useNavigate("");
   const signIn = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        navigate("/home")
+        navigate("/home");
         console.log(userCredential);
       })
       .catch((error) => {
         console.log(error);
-        toast.error(error?.message)
+        toast.error(error?.message);
       });
   };
 
@@ -81,8 +81,8 @@ function Login() {
             name="submit"
             value="sign in"
           >
-            Sign In
-            <AiOutlineUserAdd className="Sign-in-icon" />
+           Login
+            {/* <AiOutlineUserAdd className="Sign-in-icon" /> */}
           </button>
         </form>
         <p className="register-link">
@@ -95,6 +95,7 @@ function Login() {
         src={require("../Images/image(12).jpg")}
         alt=""
       />
+
       {/* <img className='' src={require("")} alt="" /> */}
       <div className="blur">
         {" "}
@@ -105,46 +106,55 @@ function Login() {
 
       {/* MIDIUM SCREEN */}
       <div className="responsive-login">
-        <img
-          className="responsive-Logo"
-          src={require("../Images/logo1.png")}
-          alt=""
-        />
-        <h2 className="responsive-welcome">WELCOME TO BMW</h2>
-        <form className="resp-input-field" onSubmit={signIn} >
+        <div className="responsive-welcome-container">
+          <h2 className="responsive-welcome">Login</h2>
+        </div>
+        <div className="responsive-welcome-container-2">
+          <p>Welcome to back BMW</p>
+        </div>
+        <form className="resp-input-field" onSubmit={signIn}>
           {/* <input className='responsive-input' type='text' placeholder='Enter Full Name' id='Name' /> */}
-          <input className="responsive-input" type="text" placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)} />
+          <label className="label-1">
+            <p>Email Adress</p>
+          </label>
+          <input
+            className="responsive-input"
+            type="text"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <label className="label-1">
+            <p>Password</p>
+          </label>
           <input
             className="responsive-input"
             type={state ? "text" : "password"}
-            placeholder="Enter Passowrd"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="responsive-eye" onClick={toggleBtn}>
+          {/* <button className="responsive-eye" onClick={toggleBtn}>
             {state ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
-          </button>
-          <button className="responsive-signin"
-             type="submit"
-             name="submit"
-             value="sign in"
+          </button> */}
+          <button
+            className="responsive-signin"
+            type="submit"
+            name="submit"
+            value="sign in"
           >
-            Signin
-            <AiOutlineUserAdd className="Sign-in-icon" />
+            Login
+            {/* <AiOutlineUserAdd className="Sign-in-icon" /> */}
           </button>
-          <p className="responsive-or">or</p>
-          <h3 className="sign-with">Sign with</h3>
-          <p className="register-link-md">
-            {" "}
-            Don't have an Account ?<a href="/Register">Register Now</a>
-          </p>
+
           <div className="responsive-icon">
             <FcGoogle className="google" />
-            <BsFacebook className="facebook" />
-            <FaTwitter className="tweeter" />
+            <p>Contiuue with Google</p>
           </div>
+
+            <a href="/Register" className="login_link">Create an account</a>
+
+          <p className="responsive-or">or sign with</p>
+          <div className="left-line"></div>
+          <div className="right-line"></div>
         </form>
       </div>
 
